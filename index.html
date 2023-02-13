@@ -1,0 +1,65 @@
+<!Doctype html>
+<html lang="en">
+		<head>
+		<meta charset="utf-8">
+				<title> Jersey Collection</title>
+				<link href="style.css" type="text/css" rel="stylesheet">
+				<script>
+					function changeJersey(jersey){
+						if(jersey=="nepal"){
+							document.getElementById('mainphoto').src='img/nepal.png';
+						}else if(jersey=="china"){
+							document.getElementById('mainphoto').src='img/china.png';
+						}else if(jersey=="brazil"){
+							document.getElementById('mainphoto').src='img/brazil.png';
+						}else if(jersey=="portugal"){
+							document.getElementById('mainphoto').src='img/portugal.png';
+						}else if(jersey=="juventus"){
+							document.getElementById('mainphoto').src='img/juventus.png';
+						}else if(jersey=="rm"){
+							document.getElementById('mainphoto').src='img/rm.png';
+						}else if(jersey=="japan"){
+							document.getElementById('mainphoto').src='img/japan.png';
+						}else if(jersey=="bayern"){
+							document.getElementById('mainphoto').src='img/bayern.png';
+						}else if(jersey=="acmilan"){
+							document.getElementById('mainphoto').src='img/acmilan.png';
+						}else{
+							document.getElementById('mainphoto').src='img/manutd.png';
+						}
+					}
+				</script>
+		</head>
+<body>
+	<div id="main">
+		<h1> My Personal Jersey Collection</h1>
+				<div id="display">
+						<table>
+							<tr>
+								<td><a href="#" onclick="changeJersey('nepal')"><img src="img/nepal.png"></a></td>
+								<td><a href="#" onclick="changeJersey('china')"><img src="img/china.png"></a></td>
+							</tr>
+							<tr>
+								<td><a href="#" onclick="changeJersey('brazil')"><img src="img/brazil.png"></a></td>
+								<td><a href="#" onclick="changeJersey('portugal')"><img src="img/portugal.png"></a></td>
+							</tr>
+							<tr>
+								<td><a href="#" onclick="changeJersey('juventus')"><img src="img/juventus.png"></a></td>
+								<td><a href="#" onclick="changeJersey('rm')"><img src="img/rm.png"></a></td>
+							</tr>
+							<tr>
+								<td><a href="#" onclick="changeJersey('japan')"><img src="img/japan.png"></a></td>
+								<td><a href="#" onclick="changeJersey('bayern')"><img src="img/bayern.png"></a></td>
+							</tr>
+							<tr>
+								<td><a href="#" onclick="changeJersey('acmilan')"><img src="img/acmilan.png"></a></td>
+								<td><a href="#" onclick="changeJersey('manutd')"><img src="img/manutd.png"></a></td>  
+							</tr>
+						</table>
+				</div>
+				<div id="content">
+				<img id="mainphoto" src="img/nepal.png">
+				</div>
+			</div>
+</body>
+</html>
